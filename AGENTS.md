@@ -2,19 +2,27 @@
 
 ## Cursor Cloud specific instructions
 
-This is a static HTML landing page (`index.html`) with no build system, no package manager, and no dependencies.
+React + Vite single-page application. Uses **pnpm** as the package manager.
 
-### Running the app
+### Common commands
 
-Serve `index.html` with any static file server. The simplest option:
+| Task | Command |
+|------|---------|
+| Install deps | `pnpm install` |
+| Dev server | `pnpm dev` (port 5173) |
+| Lint | `pnpm lint` |
+| Build | `pnpm build` |
+| Preview build | `pnpm preview` |
 
-```
-python3 -m http.server 8080
-```
+### Project structure
 
-Then open `http://localhost:8080/index.html` in the browser.
+- `src/main.jsx` — React entry point
+- `src/App.jsx` — root component
+- `src/pages/Home.jsx` — home page rendered at `/`
+- `src/pages/Home.css` — home page styles
+- `src/index.css` — global styles
 
-### Lint / Test / Build
+### Notes
 
-- **No linter, test framework, or build step** is configured. The project is a single HTML file with inline CSS and no JavaScript.
-- To validate HTML, you can use an online validator or `npx html-validate index.html` (ad-hoc, not pre-installed).
+- `esbuild` is allowed to run its postinstall script via `pnpm.onlyBuiltDependencies` in `package.json`. If a new native dependency is added, it may need to be added there too.
+- No test framework is configured yet.
