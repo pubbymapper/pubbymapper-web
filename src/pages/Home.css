@@ -1,0 +1,37 @@
+.card {
+  max-width: 480px;
+  text-align: center;
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  font-size: 1.0625rem;
+  color: #334155;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.cta {
+  display: inline-block;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #fff;
+  background: #0d9488;
+  text-decoration: none;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6px;
+  border: none;
+  transition: background 0.2s;
+}
+
+.cta:hover {
+  background: #0f766e;
+}
