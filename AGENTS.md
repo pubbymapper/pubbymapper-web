@@ -2,17 +2,17 @@
 
 ## Cursor Cloud specific instructions
 
-React + Vite single-page application. Uses **pnpm** as the package manager.
+React + Vite single-page application. Uses **npm** as the package manager.
 
 ### Common commands
 
 | Task | Command |
 |------|---------|
-| Install deps | `pnpm install` |
-| Dev server | `pnpm dev` (port 5173) |
-| Lint | `pnpm lint` |
-| Build | `pnpm build` |
-| Preview build | `pnpm preview` |
+| Install deps | `npm install` |
+| Dev server | `npm run dev` (port 5173) |
+| Lint | `npm run lint` |
+| Build | `npm run build` |
+| Preview build | `npm run preview` |
 
 ### Project structure
 
@@ -24,5 +24,4 @@ React + Vite single-page application. Uses **pnpm** as the package manager.
 
 ### Notes
 
-- `esbuild` is allowed to run its postinstall script via `pnpm.onlyBuiltDependencies` in `package.json`. If a new native dependency is added, it may need to be added there too.
 - No test framework is configured yet.
