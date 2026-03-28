@@ -1,0 +1,9 @@
+@keyframes the-local-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.the-local-spinner {
+  animation: the-local-spin 0.8s linear infinite;
+}
